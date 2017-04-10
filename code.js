@@ -1,8 +1,3 @@
-var myVar = setInterval(function() {
-  myTimer();
-}, 1000);
-
-function myTimer() {
-  var d = new Date();
-  document.getElementById("01").innerHTML = d.toLocaleTimeString();
+function openWindow(){
+  window.open("clock.html",'window','toolbar=no, menubar=no, resizable=yes, width=350, height=180, top=300, left=500');
 }

@@ -1,3 +1,8 @@
-//console.log('hello world')
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
 
-document.write('<button onclick="document.getElementById(\'01\').innerHTML = Date()">The time is?</button>')
+function myTimer() {
+  var d = new Date();
+  document.getElementById("01").innerHTML = d.toLocaleTimeString();
+}
